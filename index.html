@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="heading">
+                <h1>Survey Form</h1>
+            </div>
+            <div class="information">
+                <p>Feel Free To Answer The Questions Below Based On Your Own Experience And Opinion. If You Are Not
+                    Convenient In Answering A Particular Question Please Skip It By Answering "No". Every Answer Would
+                    Be Very Appreciated. Thank You For Your Time.
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="main_container">
+                <div class="left_side">
+                    <div class="name">
+                        <label for="namee">Your Name</label>
+                        <input type="text" id="namee" required placeholder="Enter your name">
+                    </div>
+                    <div class="email_add">
+                        <label for="email_address">Your Email Address</label>
+                        <input type="email" id="email_address" required placeholder="user@user.com">
+                    </div>
+                    <div class="phn_no">
+                        <label for="phone_no">Your Phone Number</label>
+                        <input type="tel" id="phone_no" required placeholder="8989898989">
+                    </div>
+                    <div class="location">
+                        <label for="Address">Where Do You Live?</label>
+                        <select id="country" required>
+                            <option value=" " selected>Select</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="belgium">Belgium</option>
+                            <option value="canada">Canada</option>
+                            <option value="Denmark">Denmark</option>
+                        </select>
+                    </div>
+                    <div class="age">
+                        <fieldset>
+                            <legend>Age</legend>
+                            <div class="one"><input type="radio" name="ages" id="first">
+                                <label for="first">15-20</label>
+                            </div>
+                            <div class="two"><input type="radio" name="ages" id="second">
+                                <label for="second">20-30</label>
+                            </div>
+                            <div class="three"><input type="radio" name="ages" id="thrid">
+                                <label for="thrid">31-40</label>
+                            </div>
+                            <div class="four"><input type="radio" name="ages" id="forth">
+                                <label for="forth">41-50</label>
+                            </div>
+                            <div class="five"><input type="radio" name="ages" id="fifth">
+                                <label for="fifth">Prefer not to say</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="rating">
+                        <p id="rate">How would you rate your proficiency in coding</p>
+                        <div class="level"><input type="radio" name="levelchecker" id="beginner">
+                            <label for="beginner">Beginner</label>
+                        </div>
+                        <div class="level"><input type="radio" name="levelchecker" id="intermetiate">
+                            <label for="intermetiate">Intermetiate</label>
+                        </div>
+                        <div class="level">
+                            <input type="radio" name="levelchecker" id="advance">
+                            <label for="advance">Advance</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right_side">
+                    <div class="acknowledge">
+                        <p id="contest">Have you ever appered in any coding contest? </p>
+                        <div class="contest">
+                            <input type="radio" name="choise" id="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="contest">
+                            <input type="radio" name="choise" id="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="passion">
+                        <p>Discuss what dives your passion for coding and outline your aspirations in the field.</p>
+                        <textarea name="passion_for_coding" id="passionn" cols="45" rows="4"></textarea>
+                    </div>
+                    <div class="challenges">
+                        <p>What are some of the challenges you face while coding?</p>
+                        <textarea name="challenges_in_coding" id="challengess" cols="45" rows="4"></textarea>
+                    </div>
+                    <div class="knowledge">
+                        <p>Please list the Data Structures you have a strong understanding of.</p>
+                        <textarea name="knowledge_of_dsa" id="dsa" cols="45" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Submit Form</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

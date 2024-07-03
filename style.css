@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(#aad8aa, #68bf68);
+}
+
+.content {
+    background-color: #fffffd;
+    margin: 40px 150px;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+header {
+    margin-bottom: 20px;
+
+}
+
+.heading {
+    color: #468242;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    margin-bottom: 12px;
+}
+
+.information {
+    color: rgb(110, 93, 93);
+    font-family: serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    word-spacing: 1.5px;
+}
+
+.main_container {
+    display: flex;
+}
+
+.left_side {
+    margin-right: 100px;
+    width: 45%;
+}
+
+.name lable,
+.email_add lable,
+.phn_no lable,
+.location label,
+.rating p,
+.acknowledge p,
+.name input,
+.email_add input,
+.phn_no input,
+.location select {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+label,
+p {
+    color: #1a1c1c;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+input::placeholder {
+    color: rgba(82, 163, 75, 255);
+}
+
+.name input,
+.email_add input,
+.phn_no input,
+.location select {
+    width: 400px;
+    height: 27px;
+    padding-left: 7px;
+    font-size: 14px;
+    border: solid 2px rgb(202, 200, 200);
+    border-radius: 5px;
+
+}
+
+.location select {
+    width: 412.5px;
+    height: 33px;
+}
+
+select,
+select option {
+    color: rgba(82, 163, 75, 255);
+}
+
+select:invalid,
+select option[value=""] {
+    color: #999999;
+}
+
+
+.age {
+    width: 400px;
+    height: 120px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.age fieldset {
+    width: 372px;
+    height: 110px;
+    margin-top: -10px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.age .one,
+.age .two,
+.age .three,
+.age .four,
+.age .five,
+.rating .level,
+.acknowledge .contest {
+    height: 20px;
+    width: 160px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.age label {
+    margin-left: 10px;
+    font-size: 16.5px;
+}
+
+.rating {
+    margin-top: 12px;
+}
+
+.right_side {
+    width: 45%;
+
+}
+
+.passion textarea,
+.challenges textarea,
+.knowledge textarea {
+    margin: 7px 0px;
+    width: 400px;
+    border: solid 2px rgb(202, 200, 200);
+    border-radius: 5px;
+
+}
+
+.right_side button {
+    margin-top: 10px;
+    background-color: #52a24a;
+    color: #fffffd;
+    border: none;
+    width: 450px;
+    height: 32px;
+    padding-left: 7px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1282px) {
+    .heading {
+        color: #d4eb0a;
+    }
+
+    .content {
+        margin: 40px 40px;
+    }
+}
+
+@media screen and (max-width: 1105px) {
+    .heading {
+        color: #eb210a;
+    }
+
+    .main_container {
+        display: block;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .heading {
+        color: #0ae7eb;
+    }
+
+    body {
+        min-width: 600px;
+    }
+
+}
